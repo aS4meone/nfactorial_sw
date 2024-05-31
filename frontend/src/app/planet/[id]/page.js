@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 
 async function getPlanet(id) {
-  const res = await fetch(`http://localhost:8080/planet/${id}`);
+  const res = await fetch(`http://localhost:8080/planets/${id}`);
   if (!res.ok) {
     return undefined;
   }
