@@ -1,4 +1,6 @@
-uvicorn main:app --reload
+cd backend
+
+node src/server.js
 
 cd frontend
 
