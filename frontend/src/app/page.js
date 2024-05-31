@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     async function fetchPlanets() {
       try {
-        const response = await axios.get("http://localhost:8000/planets");
+        const response = await axios.get("http://localhost:8080/planets");
         setPlanets(response.data.results);
       } catch (error) {
         console.error("Error fetching planets:", error);
@@ -24,7 +24,7 @@ export default function Home() {
 
   const handleSearch = async (query) => {
     try {
-      const response = await axios.get("http://localhost:8000/search", { params: { query } });
+      const response = await axios.get("http://localhost:8080/search", { params: { query } });
       setSearchResults(response.data);
     } catch (error) {
       console.error("Error searching:", error);
