@@ -6,6 +6,9 @@ cd backend
 node src/server.js
 
 cd frontend
+
 npm i
+
 npm run build
+
 npm run start
